@@ -11,7 +11,7 @@ def lambda_handler(event, context):
             'ToAddresses': [event['email']]  # Also a verified email
         },
         Message={
-            'Subject': {'Data': 'A reminder from your reminder service!'},
+            'Subject': {'Data': 'A reminder from your Orsys training reminder service!'},
             'Body': {'Text': {'Data': event['message']}}
         }
     )
